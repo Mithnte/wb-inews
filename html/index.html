@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>IME News Empire</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container" style="display:none;">
+        <h1>IME News Empire</h1>
+        <p style="text-align:center; font-size:12px; color:#aaa;">By By & Bae</p>
+
+        <div id="editor" style="display:none;">
+            <h2>Buat Berita Baru</h2>
+            <input id="headline" type="text" placeholder="Judul Berita">
+            <textarea id="body" placeholder="Deskripsi lengkap..."></textarea>
+            <button onclick="publishNews()">Publish</button>
+            <button onclick="closeUI()">Tutup</button>
+        </div>
+
+        <div id="newspaper" style="display:none;">
+            <h2>Koran IME Hari Ini</h2>
+            <div id="articles"></div>
+            <button onclick="closeUI()">Tutup Koran</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+</body>
+</html>
